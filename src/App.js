@@ -28,6 +28,13 @@ function App() {
     var randomNum2 = Math.floor(Math.random()*6);
     setNewImage(diceImages[randomNum1]);
     setNewImage2(diceImages[randomNum2]);
+
+    if (randomNum1===randomNum2){
+      
+      setTimeout( () => alert("winner"),200);
+    }
+
+
   }
 
   return (
